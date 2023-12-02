@@ -20,7 +20,7 @@ jobs:
         fetch-depth: 0
         submodules: recursive
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: artifact
         path: dist
