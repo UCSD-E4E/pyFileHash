@@ -93,7 +93,7 @@ std::string compute_digest(Hash_t hash_type, std::string path)
     uint8_t* buffer = new uint8_t [BUFFER_SIZE];
     if (!handle.is_open())
     {
-        throw std::exception("Unable to open file");
+        throw std::exception();
     }
     std::string digest = compute_fn[hash_type](handle, buffer, BUFFER_SIZE);
     handle.close();
