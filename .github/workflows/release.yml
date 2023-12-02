@@ -46,6 +46,7 @@ jobs:
             # to supply options, put them in 'env', like:
             # env:
             #   CIBW_SOME_OPTION: value
+            CIBW_BEFORE_BUILD: git submodule update --init --recursive && pip install .
     
         - uses: actions/upload-artifact@v3
           with:
