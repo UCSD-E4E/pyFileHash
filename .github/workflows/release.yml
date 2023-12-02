@@ -24,6 +24,9 @@ jobs:
       with:
         name: artifact
         path: dist
+    
+    - name: Check dist
+      run: ls -R dist
 
     - name: Python Semantic Release
       uses: python-semantic-release/python-semantic-release@master
