@@ -9,6 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     concurrency: release
+    needs: [build_wheels]
     permissions:
       id-token: write
       contents: write
@@ -18,6 +19,11 @@ jobs:
       with:
         fetch-depth: 0
         submodules: recursive
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: artifact
+        path: dist
 
     - name: Python Semantic Release
       uses: python-semantic-release/python-semantic-release@master
