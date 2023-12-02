@@ -2,6 +2,35 @@
 
 
 
+## v1.0.1 (2023-12-02)
+
+### Ci
+
+* ci: Updates download-artifact ([`ce7d3b7`](https://github.com/UCSD-E4E/pyFileHash/commit/ce7d3b7babbae7362d1caaedc8fa511dee87050d))
+
+* ci: Fixes assets ([`f344018`](https://github.com/UCSD-E4E/pyFileHash/commit/f344018f0aed07b39623fa7f92ed2803715912de))
+
+* ci: Removes support for macos ([`bf25aa7`](https://github.com/UCSD-E4E/pyFileHash/commit/bf25aa720b4383f6b0fdad6660da11891ee649e2))
+
+* ci: Fixes python version ([`47e949d`](https://github.com/UCSD-E4E/pyFileHash/commit/47e949dc734001a34490f5706306192cc27862c1))
+
+* ci: Upgrades pip ([`3ed9a19`](https://github.com/UCSD-E4E/pyFileHash/commit/3ed9a1926364155861a2e20c6680d32468064f68))
+
+* ci: Fixes cibw envs ([`983b659`](https://github.com/UCSD-E4E/pyFileHash/commit/983b659572784aaeb9a2595d2bfa720865ff378b))
+
+* ci: Fixes cibw ([`9348cdd`](https://github.com/UCSD-E4E/pyFileHash/commit/9348cdd0bb2e22f48782c751eecf22b33c0f242b))
+
+### Fix
+
+* fix: Fixes assets ([`0cadf77`](https://github.com/UCSD-E4E/pyFileHash/commit/0cadf7703dc9680874132a97de29d07db72edc53))
+
+* fix: Adds release artifacts ([`573cbe0`](https://github.com/UCSD-E4E/pyFileHash/commit/573cbe046ddbb89c3d9df51ab42c854af53798df))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of github.com:UCSD-E4E/pyFileHash ([`a067163`](https://github.com/UCSD-E4E/pyFileHash/commit/a067163c2ff00a1217741870b6bfaecb97f2dcfe))
+
+
 ## v1.0.0 (2023-12-02)
 
 ### Breaking
