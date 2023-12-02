@@ -1,11 +1,12 @@
 '''Tests the Python hashes
 '''
+from hashlib import md5, sha1, sha256
 from pathlib import Path
 
 import pytest
-from hashlib import sha256, sha1, md5
 
-from pyFileHash import hash
+from pyFileHash import hasher
+
 
 @pytest.mark.parametrize(
     'test_file',
@@ -15,7 +16,7 @@ from pyFileHash import hash
 def test_sha256(test_file: Path):
     with open(test_file, 'rb') as handle:
         digest = sha256(handle.read()).hexdigest()
-    py_digest = hash.compute_sha256(test_file)
+    py_digest = hasher.compute_sha256(test_file)
     assert digest == py_digest
 
 @pytest.mark.parametrize(
@@ -26,7 +27,7 @@ def test_sha256(test_file: Path):
 def test_sha1(test_file: Path):
     with open(test_file, 'rb') as handle:
         digest = sha1(handle.read()).hexdigest()
-    py_digest = hash.compute_sha1(test_file)
+    py_digest = hasher.compute_sha1(test_file)
     assert digest == py_digest
 
 @pytest.mark.parametrize(
@@ -37,5 +38,5 @@ def test_sha1(test_file: Path):
 def test_md5(test_file: Path):
     with open(test_file, 'rb') as handle:
         digest = md5(handle.read()).hexdigest()
-    py_digest = hash.compute_md5(test_file)
+    py_digest = hasher.compute_md5(test_file)
     assert digest == py_digest
