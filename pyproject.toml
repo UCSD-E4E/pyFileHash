@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pyFileHash"
+name = "pyfilehash"
 version = "0.1.0"
 description = "Python Linkage to C File Hashing"
 authors = ["Nathan Hui <nthui@ucsd.edu>"]

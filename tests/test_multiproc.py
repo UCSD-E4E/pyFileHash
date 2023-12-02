@@ -10,7 +10,7 @@ from typing import List
 import pytest
 from utils import create_random_file
 
-from pyFileHash import hasher
+from pyfilehash import hasher
 
 
 # Note that for 4 files, the setup time for Pool does not outweigh the time penalty of Python

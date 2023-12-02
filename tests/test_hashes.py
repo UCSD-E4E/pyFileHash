@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from pyFileHash import hasher
+from pyfilehash import hasher
 
 
 @pytest.mark.parametrize(
